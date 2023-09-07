@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.gameContainer{
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    width:  clamp(15rem,70vw,40rem);
+    height: clamp(15rem,70vw,40rem);
+    border: 4px solid black;
+}
+.cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  clamp(calc(15rem/3),calc(70vw/3),calc(40rem/3));
+    height: clamp(calc(15rem/3),calc(70vw/3),calc(40rem/3));
+    border: 3px solid black;
+}
+.text{
+    font-size: clamp(3rem,6vw,5rem);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.circle,.cross{
+    font-size: clamp(6.2rem,30vw,17rem);
+    font-weight: bold;
+}
+.circle{
+    color: rgb(82, 109, 19);
+}
+.cross{
+    color: rgb(9, 28, 80);
+}
